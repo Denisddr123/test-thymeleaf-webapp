@@ -12,16 +12,16 @@
     <h3>Add New Student</h3>
     <hr/>
     <form th:action="@{/saveStudent}" th:object="${student}" method="post">
-        <label>
+        <label><span>Name:&ensp;&ensp;</span>
             <input type="text" th:field="*{name}" class="Form-control col-4 mb-4" placeholder="Enter Name"/>
         </label>
-        <label>
+        <label><span>Surname:&ensp;&ensp;</span>
             <input type="text" th:field="*{surname}" class="Form-control col-4 mb-4" placeholder="Enter Surname"/>
         </label>
-        <label>
+        <label><span>Faculty:&ensp;&ensp;</span>
             <input type="text" th:field="*{faculty}" class="Form-control col-4 mb-4" placeholder="Enter Faculty"/>
         </label>
-        <label>
+        <label><span>Age:&ensp;&emsp;</span>
             <input type="text" th:field="*{age}" class="Form-control col-4 mb-4" placeholder="Enter Age"/>
         </label>
         <button type="submit" class="btn btn-primary col-2">Save</button>
