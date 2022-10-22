@@ -1,5 +1,6 @@
 package com.students.testthymeleafwebapp.entity;
 
+import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -8,12 +9,13 @@ import javax.persistence.*;
 @Setter
 @Getter
 @Entity
+@AllArgsConstructor
 @Table(name = "STUDENTS")
 public class Student {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
-    private  int id;
+    private  long id;
     @Column(name = "name")
     private String name;
     @Column(name = "surname")
